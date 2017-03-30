@@ -86,6 +86,11 @@ body {
     margin-top: 0;
   }
 }
+
+.jumbotron {
+  background-image: url("images/pic_1.jpg");
+  background-size: cover;
+}
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
