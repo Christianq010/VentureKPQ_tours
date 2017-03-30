@@ -1,5 +1,13 @@
 {
   "name": "tours",
   "dependencies": {
+    "animate.css": "animate-css#^3.5.2",
+    "flexslider": "flexlider#^2.6.3",
+    "icomoon-free": "*",
+    "modernizr": "^3.3.1",
+    "waypoints": "jquery-waypoints#^4.0.1",
+    "jquery.stellar": "stellar#^0.6.2",
+    "icomoon-bower": "icomoon#^0.1.2",
+    "jquery.easing": "^1.3.1"
   }
 }
