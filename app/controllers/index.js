@@ -12,7 +12,11 @@ export default Ember.Controller.extend({
     actions: {
 
         saveEmailAddress() {
-            alert(`Saving of the following email address is in progress: ${this.get('emailAddress')}`);
+            const email = this.get('emailAddress');
+
+            const newSubscription = this.store.createRecord('newsletter', { email: email });
+            newSubscription.save();
+
             this.set('responseMessage', `Thank you! We've just saved your email address: ${this.get('emailAddress')}`);
             this.set('emailAddress', '');
         }

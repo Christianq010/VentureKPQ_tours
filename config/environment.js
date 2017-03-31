@@ -6,7 +6,21 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-    EmberENV: {
+
+    firebase: {
+          apiKey: "AIzaSyD-rohXzUGiOpLMUHpognjPXDA2Inc7Yuk",
+          authDomain: "venturekpq-tours.firebaseapp.com",
+          databaseURL: "https://venturekpq-tours.firebaseio.com",
+          projectId: "venturekpq-tours",
+          storageBucket: "venturekpq-tours.appspot.com",
+          messagingSenderId: "1041608368067"
+      },
+      contentSecurityPolicy: {
+          'script-src': "'self' 'unsafe-eval' apis.google.com",
+          'frame-src': "'self' https://*.firebaseapp.com",
+          'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+      },
+      EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
