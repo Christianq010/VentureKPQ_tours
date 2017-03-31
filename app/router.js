@@ -13,6 +13,10 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('subscriptions');
   });
+
+  this.route('tours', function() {
+    this.route('new');
+  });
 });
 
 export default Router;

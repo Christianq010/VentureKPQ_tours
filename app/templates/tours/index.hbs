@@ -1,0 +1,17 @@
+<div class="container">
+<h2>List</h2>
+
+{{#each model as |tour|}}
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{tour.name}}</h3>
+            </div>
+            <div class="panel-body">
+                <p>Description: {{tour.description}}</p>
+                <p>Rating: {{tour.rating}}</p>
+            </div>
+        </div>
+    </div>
+{{/each}}
+</div>
