@@ -9,6 +9,7 @@
             </button>
             {{#link-to 'index' class="navbar-brand"}}VentureKPQ Tours{{/link-to}}
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -18,10 +19,18 @@
                     <a href="#" class="nav-item nav-link">Tours</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-item nav-link">Cart</a>
-                </li>
-                <li>
                     {{#link-to 'about' class="nav-item nav-link"}}About Us{{/link-to}}
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Admin<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        {{#link-to 'admin.subscriptions' class="nav-item nav-link"}}<a href="">Subscriptions</a>{{/link-to}}
+                    </ul>
                 </li>
             </ul>
             <form class="navbar-form navbar-right">
