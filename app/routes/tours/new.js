@@ -2,15 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 
+    // Create a new 'tours' record and that will be the model
     model() {
         return this.store.createRecord('tours');
     },
 
     actions: {
 
-
         saveLibrary(newTour) {
-            //send newTour to tours home page
+            //Accept a parameter and save that model
+            //send to Tours home page with transitionTo
             newTour.save().then(() => this.transitionTo('tours'));
         },
 
